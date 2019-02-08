@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmConsole", "FilmShop\FilmConsole.csproj", "{78E5F3EE-DD25-416F-86CB-40FCECE4A64A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmLibrary", "FilmLibrairie\FilmLibrary.csproj", "{2B176B3A-04A8-4105-AE5F-52A8DADCA92F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFilm", "TestFilm\TestFilm.csproj", "{57439529-2A42-42EA-8FA5-141945DB4C02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78E5F3EE-DD25-416F-86CB-40FCECE4A64A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E5F3EE-DD25-416F-86CB-40FCECE4A64A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78E5F3EE-DD25-416F-86CB-40FCECE4A64A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78E5F3EE-DD25-416F-86CB-40FCECE4A64A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B176B3A-04A8-4105-AE5F-52A8DADCA92F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B176B3A-04A8-4105-AE5F-52A8DADCA92F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B176B3A-04A8-4105-AE5F-52A8DADCA92F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B176B3A-04A8-4105-AE5F-52A8DADCA92F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57439529-2A42-42EA-8FA5-141945DB4C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57439529-2A42-42EA-8FA5-141945DB4C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57439529-2A42-42EA-8FA5-141945DB4C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57439529-2A42-42EA-8FA5-141945DB4C02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA30972B-A360-430D-BFB1-BA8EA34CA7F2}
+	EndGlobalSection
+EndGlobal
