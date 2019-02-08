@@ -114,12 +114,12 @@ namespace FilmShop
         // AJOUTER UNE PERSONNE  
 
 
-        private static void AjouterUnFilmEnBDD(string titre, string realisateur, string date, string resume, string duree)
+        private static void AjouterUnFilmEnBDD(string titre, string realisateur, string date, string resume,string genre, string duree)
         {
             SqlConnection conex = new SqlConnection(SqlConnectionString);
             conex.Open();
             SqlCommand inserer = conex.CreateCommand();
-            inserer.CommandText = ("INSERT INTO Film(TitreFilm,RealisateurFilm,DateSortie,ResumeFilm,DureeMinFilm) VALUES('" + titre + "','" + realisateur + "','" + date + "','" + resume + "','" + duree + "')";
+            inserer.CommandText = ("INSERT INTO Film(TitreFilm,RealisateurFilm,DateSortie,ResumeFilm,DureeMinFilm) VALUES('" + titre + "','" + realisateur + "','" + date + "','" + resume + "','" +genre + "','" + duree + "')";
             inserer.EndExecuteNonQuery();
             conex.Close();
 
@@ -128,7 +128,7 @@ namespace FilmShop
 
         // OBTENIR DES FILMS PAR GENRE 
 
-        private static void ObtenirFilmBDD (string titre, string realisateur, string date, string resume, string duree)
+        private static void ObtenirFilmBDD (string titre, string realisateur, string date, string resume,string genre, string duree)
         {
             SqlConnection conex = new SqlConnection(SqlConnectionString);
             conex.Open();
@@ -147,6 +147,19 @@ namespace FilmShop
 
         // OBTENIR FILM PAR ANNEE 
 
+
+        private static void ObtenirFilmParAnnee(string titre, string realisateur, string date, string resume,string genre, string duree)
+        {
+            SqlConnection conex = new SqlConnection(SqlConnectionString);
+            conex.Open();
+            SqlCommand inserer = conex.CreateCommand();
+            inserer.CommandText = ("SELECT date From Film");
+            inserer.EndExecuteNonQuery();
+            conex.Close();
+
+
+
+        }
 
 
 
